@@ -8,15 +8,24 @@
 
 
 :root {
+  --color-primary: #2563eb;
+  --color-primary-dark: #1e3a8a;
+
+  --color-background: #f5f6fa;
+  --color-card: #ffffff;
+
+  --color-text: #1f2937;
+  --color-text-secondary: #6b7280;
+
+  --color-success: #16a34a;
+  --color-warning: #f59e0b;
+  --color-danger: #dc2626;
+
+  --border-radius: 12px;
+
   --font-primary: "Manrope", sans-serif;
   --font-secondary: "Source Sans 3", sans-serif;
-
-  --color-primary: #2563eb;
-  --color-background: #f5f6fa;
-  --color-text: #1f2937;
 }
-
-
 
 body {
   font-family: var(--font-secondary);
@@ -28,6 +37,20 @@ h1,
 h2,
 h3 {
   font-family: var(--font-primary);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 1rem;
 }
 
 html {
@@ -57,4 +80,30 @@ img {
 
 #root {
   min-height: 100vh;
+}
+
+.input {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid color-mix(in srgb, var(--color-text-secondary) 35%, white);
+  border-radius: 8px;
+
+  font: inherit;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.card {
+  background-color: var(--color-card);
+
+  border-radius: var(--border-radius);
+
+  padding: 20px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
