@@ -1,0 +1,17 @@
+.header {
+    padding: 24px 32px;
+
+    background-color: var(--color-card);
+    border-bottom: 1px solid color-mix(in srgb, var(--color-text-secondary) 25%, transparent);
+}
+
+.header h1 {
+    color: var(--color-text);
+}
+
+.header p {
+    margin-top: 4px;
+
+    font-size: 0.925rem;
+    color: var(--color-text-secondary);
+}

@@ -1,8 +1,9 @@
 .sidebar {
     width: 240px;
+    flex-shrink: 0;
     min-height: 100vh;
 
-    background-color: #172554;
+    background-color: var(--color-primary-dark);
 
     display: flex;
     flex-direction: column;
@@ -22,19 +23,21 @@
 }
 
 .sidebar a {
-    color: #dbeafe;
+    color: rgba(255, 255, 255, 0.85);
     text-decoration: none;
 
     padding: 12px 14px;
 
-    border-radius: 8px;
+    border-radius: var(--border-radius);
+
+    transition: background-color 0.15s ease;
 }
 
 .sidebar a:hover {
-    background-color: #1e3a8a;
+    background-color: color-mix(in srgb, var(--color-primary-dark), black 20%);
 }
 
 .sidebar a.active {
-    background-color: #2563eb;
+    background-color: var(--color-primary);
     color: white;
 }

@@ -1,7 +1,12 @@
+import Layout from "../../components/Layout/Layout";
+
 export default function Produtos() {
   return (
-    <main>
-      <h1>Produtos</h1>
-    </main>
+    <Layout
+      titulo="Produtos"
+      descricao="Gerencie todos os produtos cadastrados."
+    >
+      <h2>Lista de Produtos</h2>
+    </Layout>
   );
 }

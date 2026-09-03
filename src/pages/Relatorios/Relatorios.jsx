@@ -1,7 +1,12 @@
+import Layout from "../../components/Layout/Layout";
+
 export default function Relatorios() {
   return (
-    <main>
-      <h1>Relatórios</h1>
-    </main>
+    <Layout
+      titulo="Relatórios"
+      descricao="Visualize relatórios detalhados do seu estoque."
+    >
+      <h2>Relatórios</h2>
+    </Layout>
   );
 }
