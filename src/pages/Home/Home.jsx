@@ -1,6 +1,8 @@
 import Layout from "../../components/Layout/Layout";
 
-export default function Home() {
+export default function Home({ produtos }) {
+  console.log(produtos);
+
   return (
     <Layout
       titulo="Painel de Controle"
